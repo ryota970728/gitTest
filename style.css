@@ -1,0 +1,27 @@
+.contents{
+  width: 95%;
+  font-size: 12px;
+}
+/* 以下は画面サイズが1024px以上になったら適用される*/
+@media screen and (min-width:1024px) {
+  .contents{
+    display: flex;
+    width: 1200px;
+    font-size: 18px;
+    background-color: red;
+  }
+}
+/* 以下は画面サイズが768px以下になったら適用されます*/
+@media screen and (max-width:768px) {
+  .contents{
+    width: 100%;
+    background-color: yellow;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+  .contents{
+    display: flex;
+  }
+  
+}
